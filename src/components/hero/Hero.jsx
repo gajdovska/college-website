@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import darkArrow from "../../assets/edusity_assets/dark-arrow.png";
+import MenuLink from "../navbar/MenuLink";
 
 const Hero = () => {
 	return (
@@ -13,9 +14,11 @@ const Hero = () => {
 					Velit omnis, iure voluptatum error eum dignissimos explicabo dicta
 					vero veritatis.
 				</p>
-				<button className="btn">
-					Explore more <img src={darkArrow} />
-				</button>
+				<MenuLink to="programs">
+					<button className="btn">
+						Explore more <img src={darkArrow} />
+					</button>
+				</MenuLink>
 			</div>
 		</div>
 	);

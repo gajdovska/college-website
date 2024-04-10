@@ -23,12 +23,24 @@ const Navbar = () => {
 		<nav className={`container ${colorNavbar ? "dark-nav" : ""}`}>
 			<img src={logo} alt="" className="logo" />
 			<ul className={showSideBarMenu ? "" : "hide-sidebar-menu"}>
-				<MenuLink to="hero">Home</MenuLink>
-				<MenuLink to="programs">Programs</MenuLink>
-				<MenuLink to="about">About us</MenuLink>
-				<MenuLink to="campus">Campus</MenuLink>
-				<MenuLink to="testimonial">Testimonials</MenuLink>
-				<MenuLink to="contact">Contact us</MenuLink>
+				<li>
+					<MenuLink to="hero">Home</MenuLink>
+				</li>
+				<li>
+					<MenuLink to="programs">Programs</MenuLink>
+				</li>
+				<li>
+					<MenuLink to="about">About us</MenuLink>
+				</li>
+				<li>
+					<MenuLink to="campus">Campus</MenuLink>
+				</li>
+				<li>
+					<MenuLink to="testimonial">Testimonials</MenuLink>
+				</li>
+				<li>
+					<MenuLink to="contact">Contact us</MenuLink>
+				</li>
 			</ul>
 			<img
 				src={menuIcon}
